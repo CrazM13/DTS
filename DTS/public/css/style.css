@@ -1,0 +1,17 @@
+
+.nav {
+
+	-webkit-column-count: 5; /* Chrome, Safari, Opera */
+	-moz-column-count: 5; /* Firefox */
+	column-count: 5;
+}
+
+.nav_item {
+
+	background-color: darkcyan;
+	border-radius: 25px;
+	text-align: center;
+	padding: 20px 0;
+	font-size: 18px;
+	
+}
