@@ -38,14 +38,22 @@ router.get('/login', (req, res) => {
 		console.log(encrypt(password, email));
 		res.redirect('/login?user=' + email);
 	} else if (user != undefined) {
-		res.render('index', { PAGE: "<h3>MUSTACHE</h3>" });
+		res.render('index', { USER: user });
 	} else {
 		res.render('login', { PAGE: "<h3>MUSTACHE</h3>" });
 	}
 });
 
 router.get('/signup', (req, res) => {
-	
+	var email = req.query.email;
+	var password = req.query.password;
+	var firstName = req.query.first_name;
+	var lastName = req.query.last_name;
+	if (email != undefined && password != undefined && firstName != undefined && lastName != undefined) {
+		res.redirect('/login?user=' + email);
+	} else {
+		res.render('signup', { PAGE: "<h3>MUSTACHE</h3>" });
+	}
 });
 
 app.use('/', router);
