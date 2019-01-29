@@ -1,17 +1,78 @@
+body {
+	background-color: #004b4b;
+}
 
-.nav {
+#prlogo {
+	float: left;
+	height: 100%;
+	background-color: #008b8b;
+	padding: 8px 8px 8px 8px;
+	border-radius: 25px;
+	border: #000000 solid 4px;
+	margin: 4px 25px;
+}
 
-	-webkit-column-count: 5; /* Chrome, Safari, Opera */
-	-moz-column-count: 5; /* Firefox */
-	column-count: 5;
+#prlogo_img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	
+	width: 100%;
+	height: 100%;
+}
+
+.drop_shadow {
+	-webkit-filter: drop-shadow(5px 5px 2px #000000);
+	-moz-filter: drop-shadow(5px 5px 2px #000000);
+	filter: drop-shadow(5px 5px 2px #000000);
+}
+
+#site_title {
+	font-size: 48px;
+	margin: auto 0;
+}
+
+#site_author {
+	margin: auto 0;
+}
+
+nav {
+	width: 100%;
+	background-color: #006b6b;
+	-webkit-column-count: 3; /* Chrome, Safari, Opera */
+	-moz-column-count: 3; /* Firefox */
+	column-count: 3;
+}
+
+.nav_link {
+	background-color: #008b8b;
+	border-radius: 25px;
+	text-align: center;
+	padding: 20px 20px;
+	font-size: 18px;
+	color: #000000;
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-drag: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+}
+
+.nav_link:hover {
+	background-color: #407b7b;
+	transition: 0.5s;
+}
+
+.nav_link:active {
+	background-color: #205353;
 }
 
 .nav_item {
+	height: 40px;
+	display: inline-block;
+	margin: 25px 5px 5px 5px;
+}
 
-	background-color: darkcyan;
-	border-radius: 25px;
-	text-align: center;
-	padding: 20px 0;
-	font-size: 18px;
-	
+p, h1, h2, h3 {
+	color: #B0B0B0;
 }
