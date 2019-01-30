@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>DTS</title>
+		<link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+		<script src="scripts/script.js"></script>
+		<script src="scripts/addbug.js"></script>
+	</head>
+	<body>
+		<header>
+			<div id="prlogo">
+				<img src="images/logo.png" class="drop_shadow" id="prlogo_img" />
+			</div>
+			<div>
+				<h1 id="site_title">DTS</h1>
+				<h2 id="site_author">By Joseph Sepulveda</h2>
+			</div>
+		</header>
+		<nav>
+			<div class="nav_item">
+				<a class="nav_link" href="/search?{{QUERY}}">SEARCH</a>
+			</div>
+			<div class="nav_item">
+				<a class="nav_link" href="/input?{{QUERY}}">SUBMIT A BUG</a>
+			</div>
+			<div class="nav_item">
+				<a class="nav_link" href="/login?{{QUERY}}">LOG IN</a>
+			</div>
+		</nav>
+		<main>
+			<form id="submit_bug">
+				<fieldset>
+					<legend>Bug Catagorizing</legend>
+					
+				</fieldset>
+				<input type="submit"/>
+			</form>
+		</main>
+		<footer>
+			<div id="bug_count_tracking">
+				<div id="bug_count_major"><p>MAJOR</p></div>
+				<div id="bug_count_minor"><p>MINOR</p></div>
+				<div id="bug_count_nth"><p>NTH</p></div>
+			</div>
+		</footer>
+	</body>
+</html>

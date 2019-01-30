@@ -4,7 +4,7 @@
 		<meta charset="utf-8" />
 		<title>DTS</title>
 		<link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
-		<!--<script src="main.js"></script>-->
+		<script src="scripts/script.js"></script>
 	</head>
 	<body>
 		<header>
@@ -18,13 +18,13 @@
 		</header>
 		<nav>
 			<div class="nav_item">
-				<a class="nav_link" href="/search?{{USER}}">SEARCH</a>
+				<a class="nav_link" href="/search?{{QUERY}}">SEARCH</a>
 			</div>
 			<div class="nav_item">
-				<a class="nav_link" href="/input">SUBMIT A BUG</a>
+				<a class="nav_link" href="/input?{{QUERY}}">SUBMIT A BUG</a>
 			</div>
 			<div class="nav_item">
-				<a class="nav_link" href="/login">LOG IN</a>
+				<a class="nav_link" href="/login?{{QUERY}}">LOG IN</a>
 			</div>
 		</nav>
 		<main>
@@ -35,5 +35,12 @@
 			<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi vitae sem ultricies, tristique eros non, malesuada leo. In faucibus leo eu nunc vestibulum, vehicula convallis enim consequat. Nam dapibus justo vel est sollicitudin blandit. Praesent maximus maximus sem vel gravida. Suspendisse vestibulum eu urna ac fermentum. Pellentesque eu ullamcorper enim, ac elementum nunc. Aliquam nibh arcu, convallis id tincidunt at, lacinia eu tortor. Sed efficitur, erat sit amet laoreet faucibus, lacus diam varius quam, vitae scelerisque dolor ipsum ac nisl. Duis mollis commodo porttitor. Praesent hendrerit bibendum fringilla. Aenean pharetra ex in viverra suscipit. Donec vitae lorem sit amet sem congue pellentesque sit amet ut eros. Curabitur vitae enim nunc. Praesent tempor, mi vel rhoncus dignissim, ante leo euismod lectus, vitae feugiat urna libero et nisi.</p>
 			<p>Morbi diam arcu, ullamcorper sed libero nec, malesuada tincidunt eros. Nulla ullamcorper placerat sapien ut rhoncus. Nullam commodo pharetra arcu eget eleifend. Donec gravida pharetra purus ut suscipit. Integer gravida dictum dignissim. Cras ut eleifend eros, ac mattis sapien. Curabitur ornare vitae nulla at sollicitudin. Donec vitae metus eros. Nulla rhoncus purus non libero viverra, vel mattis turpis ullamcorper. Sed dictum magna in rutrum varius.</p>
 		</main>
+		<footer>
+			<div id="bug_count_tracking">
+				<div id="bug_count_major"><p>MAJOR</p></div>
+				<div id="bug_count_minor"><p>MINOR</p></div>
+				<div id="bug_count_nth"><p>NTH</p></div>
+			</div>
+		</footer>
 	</body>
 </html>
