@@ -31,9 +31,79 @@
 		<main>
 			<form id="submit_bug">
 				<fieldset>
-					<legend>Bug Catagorizing</legend>
-					
+					<legend>Basic Data</legend>
+					<label>Project</label>
+					<select name="project" id="project_dropdown"></select>
+					<br />
+					<br />
+					<label>Bug Name</label>
+					<input name="bug_name" type="text" required />
 				</fieldset>
+				<fieldset>
+					<legend>Bug Catagorizing</legend>
+					<label>Bug Type</label>
+					<select name="bug_type">
+						<option value="function">Function</option>
+						<option value="assignment">Assignment</option>
+						<option value="checking">Checking</option>
+						<option value="timing">Timing</option>
+						<option value="build">Build</option>
+						<option value="algorithm">Algorithm</option>
+						<option value="documentation">Documentation</option>
+						<option value="interface">Interface</option>
+						<option value="none">None</option>
+						<option value="unsure">Unsure</option>
+					</select>
+					<br />
+					<br />
+					<label>Bug Severity</label>
+					<select name="bug_level">
+						<option value="major">Major</option>
+						<option value="minor">Minor</option>
+						<option value="nth">NTH</option>
+					</select>
+				</fieldset>
+				<fieldset>
+					<legend>Enviornment</legend>
+					<label>Operating System</label>
+					<select name="os">
+						<option value="windows">Windows</option>
+						<option value="mac">Mac OS</option>
+						<option value="linux">Linux</option>
+						<option value="ios">iOS</option>
+						<option value="android">Android</option>
+						<option value="other">Other</option>
+					</select>
+					<br />
+					<br />
+					<label>Platform</label>
+					<select name="platform">
+						<option value="desktop">Desktop</option>
+						<option value="mobile">Mobile</option>
+						<option value="console">Console</option>
+						<option value="other">Other</option>
+					</select>
+					<br />
+					<br />
+					<label>Extra Information</label>
+					<br />
+					<textarea name="env_extra" rows=10 cols=100 style="resize: none;"></textarea>
+				</fieldset>
+				<fieldset>
+					<legend>Bug Information</legend>
+					<label>Description</label>
+					<br />
+					<textarea name="description" rows=10 cols=100 style="resize: none;"></textarea>
+					<br />
+					<br />
+					<label>Steps To Reproduce</label>
+					<br />
+					<textarea name="steps" rows=10 cols=100 style="resize: none;"></textarea>
+					<br />
+					<br />
+				</fieldset>
+				<br />
+				<br />
 				<input type="submit"/>
 			</form>
 		</main>

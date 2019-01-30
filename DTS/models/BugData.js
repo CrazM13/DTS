@@ -20,11 +20,11 @@ var BugSchema = new Schema({
 		required: true
 	},
 	enviornment: {
-		hardware: {
+		os: {
 			type: String,
 			required: false
 		},
-		os: {
+		platform: {
 			type: String,
 			required: false
 		},
@@ -33,7 +33,7 @@ var BugSchema = new Schema({
 			required: false
 		}
 	},
-	discription: {
+	description: {
 		type: String,
 		required: true
 	},
